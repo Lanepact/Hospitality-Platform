@@ -1,16 +1,14 @@
 <template>
-  
-  <ReservationEntry />
+  <Header />
 </template>
 
 <script>
-// import Header from './components/Header'
-import ReservationEntry from './components/ReservationEntry'
+import  Header  from "@/components/Header";
 
 export default {
   name: 'App',
   components: {
-    ReservationEntry,
+    Header,
   }
 }
 </script>
