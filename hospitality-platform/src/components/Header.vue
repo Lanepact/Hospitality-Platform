@@ -4,18 +4,32 @@
     nav-item" to="/">Home</router-link> 
     <router-link class="
     nav-item" to="/signin">SignIn</router-link>
-    <router-link to="/"><Button text="Reserve Now" class="btn p-2 text-bold" /></router-link>
+    <Button text="Reserve Now" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+    <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <form>
+        <div class="w-50">
+            <label for="signupFirstName" class="form-label">Destination</label>
+            
+          </div>
+          <div class="w-50">
+            <label for="signupLastName" class="form-label">Last Name</label>
+            <Input type="text" class="form-control p-3 w-75 fw-bold" id="signupLastName" aria-describedby="emailHelp"/>
+          </div>
+      </form>
+    </Modal>
   </div>
   <router-view/>
 </template>
 
 <script>
 import  Button  from "@/components/Button";
+import Modal from "@/components/Modal";
 
 export default {
   name: 'App',
   components: {
     Button,
+    Modal
   }
 }
 </script>
