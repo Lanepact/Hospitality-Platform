@@ -20,13 +20,13 @@ export default{
     padding: 3% 15% 7%;
     text-align: center;
 }
-@media (max-width: 500px){
+@media (max-width: 320px){
     #information{
-        padding: 20%;
+        padding: 0%;
         padding-top: 40%;
         padding-bottom: 5%;
         background-color: white;
-        text-align: left;
+        text-align:left;
     }
 }
 
@@ -34,7 +34,7 @@ export default{
 @media (max-width: 800px){
     #information{
         padding: 20%;
-        padding-top: 30%;
+        padding-top: 55%;
         padding-bottom: 5%;
         background-color: white;
         text-align: left;

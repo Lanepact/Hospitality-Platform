@@ -15,11 +15,11 @@
   </div>
   <div class="col form-content">
       <label for="">STAY DATES</label>
-    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name ">
   </div>
   <div class="mobile-view">
     <input type="text" placeholder="Where to?">
-      <Button text="Reserve" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+      <Button text="OK" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
     <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"/>
   </div>
   <div class="col form-content">
@@ -91,10 +91,12 @@ main content styles */
 }
 .mobile-view{
   display: none;
+  
 }
 
 /* mobile view */
-@media (max-width: 500px) {
+@media (max-width: 320px) {
+ 
   .message{
     text-align: center;
     background-color:linen;
@@ -109,18 +111,19 @@ main content styles */
 }
 
 .main-form{
-   position: relative;
-   top: 200px;
-   /* z-index: ; */
+  position: relative;
+  top: 200px;
   text-align: center;
   padding-top:20px;
-  
+  padding-left: 0;
   
 }
 input{
-  width: 200px;
+  width: 50px;
+  padding: 0;
  
 }
+
 .mobile-view{
   display: inline;
    padding: 0;
@@ -130,7 +133,7 @@ input{
 }
 .btn{
   text-align: center;
-  height: 34px;
+  height: 30px;
 }
 }
 /* tablets */
@@ -140,7 +143,7 @@ input{
     background-color:linen;
     width:90%;
     position: relative;
-    top: 320px;
+    top: 290px;
     margin-right:10%;
     margin-left: 10%;
     margin-top: 50%;
@@ -151,14 +154,13 @@ input{
 .main-form{
    position: relative;
    top: 200px;
-   /* z-index: ; */
   text-align: center;
   padding-top:20px;
   padding-bottom: 10px;
   
 }
 input{
-  width: 200px;
+  width: 150px;
  
 }
 .mobile-view{
@@ -171,6 +173,7 @@ input{
 .btn{
   text-align: center;
   height: 34px;
+ 
 }
 }
 
