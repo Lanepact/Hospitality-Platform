@@ -144,7 +144,7 @@ pre{
     background-color: black;
     color: white;
     border: none;
-    margin: 10px;
+    /* margin: 10px; */
     width:200px;
 }
 
@@ -153,7 +153,8 @@ pre{
     background-color: black;
     color: white;
     border: none;
-    margin: 10px;
+    width: 200px;
+    /* margin: 10px; */
 
 }
 }
