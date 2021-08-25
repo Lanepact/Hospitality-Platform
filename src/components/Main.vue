@@ -7,17 +7,22 @@
     <div class="container main-form">
         <div class="row">
             <div class="col">
-                <h3>Explore the world</h3>
+                <h3 class="form-content">Explore the world</h3>
             </div>
-  <div class="col">
-      <label for="">DESTINATION</label>
+  <div class="col form-content">
+      <label for="" >DESTINATION</label>
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
   </div>
-  <div class="col">
+  <div class="col form-content">
       <label for="">STAY DATES</label>
     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
   </div>
-  <div class="col">
+  <div class="mobile-view">
+    <input type="text" placeholder="Where to?">
+      <Button text="Reserve" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+    <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"/>
+  </div>
+  <div class="col form-content">
       <Button text="HOTEL SEARCH" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
     <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <form>
@@ -72,9 +77,10 @@ main content styles */
     padding:15px;
 }
 .main-form{
-    background-color: #fff;
+    background-color:#fff;
     width: 100%;
-    padding:5%;
+    padding:3%;
+    padding-bottom: 3%;
     margin-bottom: 0;
 }
 .btn{
@@ -82,6 +88,90 @@ main content styles */
     background-color: bisque;
     border: none;
     margin: 20px;
+}
+.mobile-view{
+  display: none;
+}
+
+/* mobile view */
+@media (max-width: 500px) {
+  .message{
+    text-align: center;
+    background-color:linen;
+    width:90%;
+    position: relative;
+    top: 300px;
+    margin-right:10%;
+    margin-left: 10%;
+    margin-top: 50%;
+    margin-bottom: 30%;
+    padding:19px;
+}
+
+.main-form{
+   position: relative;
+   top: 200px;
+   /* z-index: ; */
+  text-align: center;
+  padding-top:20px;
+  
+  
+}
+input{
+  width: 200px;
+ 
+}
+.mobile-view{
+  display: inline;
+   padding: 0;
+}
+.form-content{
+  display: none;
+}
+.btn{
+  text-align: center;
+  height: 34px;
+}
+}
+/* tablets */
+@media (max-width: 800px) {
+  .message{
+    text-align: center;
+    background-color:linen;
+    width:90%;
+    position: relative;
+    top: 320px;
+    margin-right:10%;
+    margin-left: 10%;
+    margin-top: 50%;
+    margin-bottom: 30%;
+    padding:19px;
+}
+
+.main-form{
+   position: relative;
+   top: 200px;
+   /* z-index: ; */
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 10px;
+  
+}
+input{
+  width: 200px;
+ 
+}
+.mobile-view{
+  display: inline;
+   padding: 0;
+}
+.form-content{
+  display: none;
+}
+.btn{
+  text-align: center;
+  height: 34px;
+}
 }
 
 </style>

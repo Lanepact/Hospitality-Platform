@@ -19,4 +19,10 @@ export default{
     padding: 3% 15% 7%;
     text-align: center;
 }
+@media (max-width: 500px){
+    #informationtwo{
+        text-align: center;
+    }
+}
+
 </style>
