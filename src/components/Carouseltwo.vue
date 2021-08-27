@@ -5,20 +5,20 @@
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid ">
             <div class="row">
-          <div class="col colone coloneimgone">
+          <div class="col colone coloneimgone ">
 
           </div>
-          <div class="col coltwo">
+          <div class="col coltwo ">
               <h3 class="carousel-text">Sheraton Downtown Denver Hotel</h3>
           </div>
             </div>
         </div>
         <div class="carousel-item container-fluid" > 
           <div class="row">
-          <div class="col colone coloneimgtwo">
+          <div class="col colone coloneimgtwo ">
 
           </div>
-          <div class="col coltwo">
+          <div class="col coltwo ">
               <h3 class="carousel-text">Sheraton Grand Hotel Dubai</h3>
           </div>
             </div>
@@ -28,7 +28,7 @@
           <div class="col colone coloneimgthree">
 
           </div>
-          <div class="col coltwo">
+          <div class="col coltwo ">
               <h3 class="carousel-text">Sheraton Guanzhou Hotel</h3>
           </div>
             </div>
@@ -62,7 +62,7 @@ export default {
 }
 .colone{
     
-    width:70%;
+    width:100%;
     height: 500px;
     padding:50px;
     text-align: center;
@@ -89,5 +89,38 @@ export default {
 .carousel-text{
   padding: 15%;
 }
-
+@media (max-width: 500px){
+  
+  .colone{
+    padding: 0;
+    width:100%;
+    padding: 20%;
+ 
+  }
+  .coltwo{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right:10%;
+    width: 100%;
+    
+    
+  }
+}
+/* tablet */
+@media (max-width: 800px){
+  
+  .colone{
+    padding: 0;
+    width:100%;
+    padding: 40%;
+ 
+  }
+  .coltwo{
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right:10%;
+    width: 100%;
+    
+  }
+}
 </style>

@@ -3,7 +3,7 @@
         <hr>
         <div class="container">   
   <div class="row">
-    <div class="col links col-3">
+    <div class="col links col-sm-3" >
       <ul>
           <li><a href="#">SHERATON STORE</a></li>
           <li><a href="#">VACATION CLUB</a></li>
@@ -15,7 +15,7 @@
 
       </ul>
     </div>
-    <div class="col col-3">
+    <div class="col ">
       <h2>STAY CONNECTED</h2>
       <div class="footericons">
       <i class="fab fa-twitter footer-icon fa-2x"></i>
@@ -24,7 +24,7 @@
       <i class="fab fa-youtube footer-icon fa-2x"></i>
    </div>
     </div>
-    <div class="col">
+    <div class="col ">
      <Images :source="devices"/>
         <div class="container">
   <div class="row">
@@ -35,7 +35,7 @@
     When you need it.</pre>
      <button type="button" class="btn ">LEARN MORE</button>
     </div>
-    <div class="col download-buttons">
+    <div class="col download-buttons ">
     <button type="button" class="btn btn-dark btn-lg download-btn download-btn-one"><i class="fab fa-apple"></i>Download</button>
     <button type="button" class="btn btn-light btn-lg download-btn download-btn-two"><i class="fab fa-google-play"></i>Download</button>
     </div>
@@ -114,5 +114,48 @@ pre{
     color: white;
     border: none;
     margin: 10px;
+}
+@media (max-width: 500px){
+    .download-btn-one{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10px;
+    width:200px;
+}
+
+.download-btn-two{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10px;
+
+}
+}
+/* tablets */
+@media (max-width: 800px){
+   .links{
+       padding-right:50%;
+   } 
+    .download-btn-one{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    /* margin: 10px; */
+    width:200px;
+}
+
+.download-btn-two{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 200px;
+    /* margin: 10px; */
+
+}
 }
 </style>

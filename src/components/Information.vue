@@ -20,4 +20,24 @@ export default{
     padding: 3% 15% 7%;
     text-align: center;
 }
+@media (max-width: 320px){
+    #information{
+        padding: 0%;
+        padding-top: 40%;
+        padding-bottom: 5%;
+        background-color: white;
+        text-align:left;
+    }
+}
+
+/* tablets */
+@media (max-width: 800px){
+    #information{
+        padding: 20%;
+        padding-top: 55%;
+        padding-bottom: 5%;
+        background-color: white;
+        text-align: left;
+    }
+}
 </style>
