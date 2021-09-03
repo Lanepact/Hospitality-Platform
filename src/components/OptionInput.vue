@@ -1,7 +1,9 @@
 <template>
-  <select name="" id="">
-    <option value=""></option>
-  </select>
+  <select>
+  <slot>
+    
+  </slot>
+</select>
 </template>
 
 <script>

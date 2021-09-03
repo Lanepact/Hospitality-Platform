@@ -4,22 +4,22 @@
     <div class="p-3 mt-4">
       <h2 class="fw-bold">SIGN IN</h2>
       <div class="signin-container d-flex space-between w-100">
-        <form class="w-50 ms-4 mt-4" >
+        <form class="w-50 ms-4 mt-4" @submit.prevent="signIn">
           <div class="mb-3">
             <label for="signinEmail" class="form-label">Email address</label>
-            <Input type="email" class="form-control p-3 w-75 fw-bold" id="signinEmail" aria-describedby="emailHelp"/>
+            <input v-model="email" type="email" class="form-control p-3 w-75 fw-bold" id="signinEmail" aria-describedby="emailHelp">
             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
           </div>
           <div class="mb-3">
             <label for="signinPassword" class="form-label">Password</label>
-            <Input type="password" class="form-control p-3 w-75 fw-bold" id="signinPassword" />
+            <input v-model="password" type="password" class="form-control p-3 w-75 fw-bold" id="signinPassword" >
           </div>
           <div class="mb-3 form-check">
-            <Input type="checkbox" class="form-check-input" id="rememberMe" />
+            <input type="checkbox" class="form-check-input" id="rememberMe" >
             <label class="form-check-label" for="rememberMe">Remember Me</label>
           </div>
           <Button buttonType="submit" text="Sign In" class="btn p-2 fw-bold text-light fs-4"/>
-          <p></p>
+          
         </form>
         <div class="d-flex flex-column">
           <Images :source="hotelImage" class="img-fluid border"/>
@@ -34,24 +34,46 @@
       </div>
     </div>
   </div>
+  
 </template>
 
 <script>
-import Input from "@/components/Input";
 import Button from "@/components/Button";
 import Images  from "@/components/Images";
 import hotelImage from "@/assets/hotel1.jpg";
+import axios from 'axios';
 
 export default {
   name: 'Signin',
   components: {
     Images,
-    Input,
     Button
   },
   data() {
     return {
-      hotelImage: hotelImage
+      hotelImage: hotelImage,
+      email: "",
+      password: "",
+      formInput: {},
+      data: []
+    }
+  },
+  methods: {
+    signIn() {
+      this.formInput = {
+        email: this.email,
+        password: this.password
+      }
+
+      axios.post('https://hospitalitybase.herokuapp.com/api/v1/users/login', this.formInput)
+        .then(responce => {
+          this.data = responce.data;
+          console.log(this.data)
+          
+        })
+        .catch(err => {
+          console.log(err)
+        })
     }
   }
 }
