@@ -84,7 +84,7 @@ export default {
         name: this.name,
         email: this.email,
         password: this.password,
-        confirmPassword: this.confirmPassword
+        passwordConfirm: this.confirmPassword
       }
       axios.post('https://hospitalitybase.herokuapp.com/api/v1/users/signup', this.formInput)
         .then(() => {
@@ -99,7 +99,7 @@ export default {
         name: "",
         email: "",
         password: "",
-        confirmPassword: ""
+        passwordConfirm: ""
       }
     }
   }
