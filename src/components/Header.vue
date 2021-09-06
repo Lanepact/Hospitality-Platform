@@ -4,7 +4,7 @@
     nav-item" to="/">Home</router-link> 
     <router-link class="
     nav-item" to="/signin">SignIn</router-link>
-    <Button text="Reserve Now" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+    <Button text="Reserve Now" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="$router.push('reservation')" />
     <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <form>
         <div class="mb-3 d-flex w-100">
