@@ -137,6 +137,9 @@ input{
   text-align: center;
   height: 30px;
 }
+body{
+  width: 100%
+}
 }
 /* tablets */
 @media (max-width: 800px) {

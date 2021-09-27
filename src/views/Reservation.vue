@@ -134,11 +134,8 @@ h1{
   display: flex;
 }
 .btn{
-  position: relative;
-  width: 100px;
-  left: 130px;
-  margin-top: 500px;
- 
+ margin-left: 150px;
+
 }
 
 .price{
@@ -168,12 +165,8 @@ h1{
   line-height: 1;
 }
 .btn{
-  position: absolute;
-  top: 20%;
-  width: 200px;
-  height: 45px;
-  margin-top: 500px;
- 
+ margin-left: 150px;
+
 }
 
 .price{
