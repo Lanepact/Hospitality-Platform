@@ -112,7 +112,7 @@ h1{
 }
  
 /* mobile-view */
-@media (max-width: 320px){
+@media (max-width: 330px){
 #reservation{
   text-align:left;
 }
@@ -167,7 +167,7 @@ h1{
 }
 .btn{
  margin-left: 150px;
-
+margin-top:300px;
 }
 
 .price{
