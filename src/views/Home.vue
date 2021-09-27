@@ -23,6 +23,7 @@ import Card from "@/components/Card"
 import Footer from "@/components/Footer"
 
 
+
 export default {
   name: 'Home',
   components: {
@@ -33,7 +34,8 @@ export default {
     Carouseltwo,
     Infotwo,
     Card,
-    Footer,
+    Footer
+   
   }
 }
 </script>

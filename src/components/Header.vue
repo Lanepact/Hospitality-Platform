@@ -1,11 +1,21 @@
 <template>
-  <div id="nav">
-    <router-link class="
-    nav-item" to="/">Home</router-link> 
-    <router-link class="
-    nav-item" to="/signin">SignIn</router-link>
-    <Button text="Reserve Now" class="btn p-2 text-bold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="$router.push('reservation')" />
-    <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hospitality Project</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+         <router-link class="nav-item" to="/">Home</router-link>
+        </li>
+        <li class="nav-item">
+         <router-link class=" nav-item" to="/signin">Signin</router-link>
+        </li>
+       <Button text="Reserve Now" class="btn p-2 text-bold position" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="$router.push('reservation')" />
+
+       <Modal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <form>
         <div class="mb-3 d-flex w-100">
           <div class="w-50 m-2">
@@ -39,9 +49,14 @@
         </div>
       </form>
     </Modal>
+         
+      </ul>
+    </div>
   </div>
+</nav>
   <router-view/>
 </template>
+  
 
 <script>
 import  Button  from "@/components/Button";
@@ -50,7 +65,7 @@ import { ref } from '@vue/reactivity';
 
 
 export default {
-  name: 'App',
+  name: 'Header',
   components: {
     Button,
     Modal,
@@ -111,4 +126,27 @@ export default {
   .pill {
     border-radius: 50%;
   }
+  .position{
+    margin-left: 700px;
+  }
+
+  .navbar a{
+    color: white;
+    
+  }
+  
+  @media (max-width: 320px) {
+.position{
+    margin-left: 50px;
+  }
+  }
+
+  @media (max-width: 500px) {
+.position{
+    margin-left: 50px;
+  }
+  }
+  
+
+
 </style>

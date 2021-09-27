@@ -48,12 +48,14 @@ import  Button  from "@/components/Button";
 import Modal from "@/components/Modal";
 
 
+
 export default{
     name:'Main',
     components: {
     Button,
-    Modal
+    Modal,
   }
+    
 }
 </script>
 
