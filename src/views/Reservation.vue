@@ -135,6 +135,7 @@ h1{
 }
 .btn{
  margin-left: 150px;
+ margin-top: 300px;
 
 }
 
@@ -183,7 +184,6 @@ h1{
 .img{
   width: 100%;
 }
-
 
 }
 
